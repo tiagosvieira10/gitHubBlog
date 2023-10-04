@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { gitHub, local, seguidores } from "../../assets/icon";
-import { CountData, DataProfileContainer, HomeContainer, PhotoProfile, ProfileGithub } from "./styles";
+import { gitHub, linkGit, local, seguidores } from "../../assets/icon";
+import { CountData, DataProfileContainer, HeaderProfileGitHub, HomeContainer, PhotoProfile, ProfileGithub } from "./styles";
 
 export function Home() {
   return (
@@ -11,13 +11,16 @@ export function Home() {
         </PhotoProfile>  
 
         <DataProfileContainer>
-          <div className="nameAndDescription">
-            <h2>Tiago Vieira</h2>
-            <span>Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass.</span>
-          </div>
-          <Link to={"https://github.com/tiagosvieira10"} target="blank">
-            GITHUB
-          </Link>
+          <HeaderProfileGitHub>
+            <div className="nameAndDescription">
+              <h2>Tiago Vieira</h2>
+              <span>Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass.</span>
+            </div>
+            <Link to={"https://github.com/tiagosvieira10"} target="blank">
+              GITHUB
+              <img src={linkGit} alt="" />
+            </Link>
+          </HeaderProfileGitHub>
 
           <div className="dataProfile">
             <CountData>

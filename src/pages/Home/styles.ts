@@ -26,6 +26,18 @@ export const PhotoProfile = styled.div`
     border-radius: 8px;
   }
 `
+export const HeaderProfileGitHub = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  
+  a {
+    gap: 0.5rem;
+    display: flex;
+    position: absolute;
+    color: ${({theme}) => theme.colors.blue};
+    font-size: ${(props) => props.theme.fontSizes.link};
+  }
+`
 
 export const DataProfileContainer = styled.div`
   display: flex;
