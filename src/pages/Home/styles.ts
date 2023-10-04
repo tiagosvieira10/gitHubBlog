@@ -4,6 +4,8 @@ export const HomeContainer = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-direction: column;
 `
 export const ProfileGithub = styled.div`
   display: flex;
@@ -77,5 +79,42 @@ export const CountData = styled.div`
   img {
     height: 1.125rem;
     width: 1.125rem;
+  }
+`
+
+export const PublicationSearch = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  .headerSearchPublications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    h4 {
+      color: ${({theme}) => theme.colors["base-subtitle"]};
+    }
+
+    p {
+      font-size: ${(props) => props.theme.fontSizes["text-s"]};
+      color: ${({theme}) => theme.colors["base-span"]};
+    }
+  }
+
+  textarea { 
+    width: 54rem;
+    height: 3.25rem;
+    resize: none;
+
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background-color: ${({theme}) => theme.colors["base-input"]};
+    
+    border: 1px solid ${({theme}) => theme.colors["base-border"]};
+  }
+
+  textarea::placeholder {
+    color: ${({theme}) => theme.colors["base-label"]};
   }
 `

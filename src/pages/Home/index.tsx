@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { gitHub, linkGit, local, seguidores } from "../../assets/icon";
-import { CountData, DataProfileContainer, HeaderProfileGitHub, HomeContainer, PhotoProfile, ProfileGithub } from "./styles";
+import { CountData, DataProfileContainer, HeaderProfileGitHub, HomeContainer, PhotoProfile, ProfileGithub, PublicationSearch } from "./styles";
 
 export function Home() {
   return (
@@ -40,11 +40,15 @@ export function Home() {
         </DataProfileContainer> 
       </ProfileGithub>
 
-      {/* <PublicationSearch>
-
+      <PublicationSearch>
+        <div className="headerSearchPublications">
+          <h4>Publicações</h4>
+          <p>6 publicações</p>
+        </div>
+        <textarea placeholder="Buscar conteúdo"/>
       </PublicationSearch>
 
-      <Publications>
+      {/* <Publications>
 
       </Publications> */}
     </HomeContainer>
