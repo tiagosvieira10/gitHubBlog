@@ -18,6 +18,11 @@ export const BoxExplain = styled.div`
 
   background-color: ${({theme}) => theme.colors["base-profile"]};
   border-radius: 10px;
+
+  h2 {
+    font-size: ${({theme}) => theme.fontSizes["title-l"]};
+    color: ${({theme}) => theme.colors["base-title"]};
+  }
 `
 
 export const HeaderBoxExplin = styled.div`
@@ -45,4 +50,6 @@ export const PostData = styled.div`
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+
+  color:${({theme}) => theme.colors["base-span"]} ;
 `
