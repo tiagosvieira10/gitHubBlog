@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { BoxExplain, CardExplainContainer, HeaderBoxExplin, InformationPost, PostData } from "./styles";
+import { BoxExplain, CardExplainContainer, ContentExplain, HeaderBoxExplin, InformationPost, PostData } from "./styles";
 import voltarIcon from '../../assets/icon/voltar.svg'
+import imgPost from '../../assets/icon/code.png'
 import { data, gitHub, linkGit, mensagem } from "../../assets/icon";
 
 export function CardExplain() {
@@ -36,6 +37,17 @@ export function CardExplain() {
         </InformationPost>
 
       </BoxExplain>
+
+      <ContentExplain>
+        <p>
+          <strong>Programming languages all have built-in data structures, but these often differ from one language to another.</strong>This article attempts to list the built-in data structures available in JavaScript and what properties they have. These can be used to build other data structures. Wherever possible, comparisons with other languages are drawn.
+
+          <h6>Dynamic typing</h6>
+          JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:
+        </p>
+        <img src={imgPost} alt="" />
+      </ContentExplain>
     </CardExplainContainer>
+
   )
 }

@@ -53,3 +53,12 @@ export const PostData = styled.div`
 
   color:${({theme}) => theme.colors["base-span"]} ;
 `
+
+export const ContentExplain = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  max-width: 54rem;
+`
