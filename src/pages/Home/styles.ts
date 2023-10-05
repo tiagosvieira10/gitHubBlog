@@ -112,9 +112,20 @@ export const PublicationSearch = styled.div`
     background-color: ${({theme}) => theme.colors["base-input"]};
     
     border: 1px solid ${({theme}) => theme.colors["base-border"]};
+    border-radius: 6px;
   }
 
   textarea::placeholder {
     color: ${({theme}) => theme.colors["base-label"]};
   }
+`
+
+export const Publications = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  gap: 2rem;
+  margin: 3rem auto;
 `

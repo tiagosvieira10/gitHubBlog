@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { gitHub, linkGit, local, seguidores } from "../../assets/icon";
-import { CountData, DataProfileContainer, HeaderProfileGitHub, HomeContainer, PhotoProfile, ProfileGithub, PublicationSearch } from "./styles";
+import { CountData, DataProfileContainer, HeaderProfileGitHub, HomeContainer, PhotoProfile, ProfileGithub, PublicationSearch, Publications } from "./styles";
+import { PublicationCard } from "./components/PublicationCard";
 
 export function Home() {
   return (
@@ -48,9 +49,14 @@ export function Home() {
         <textarea placeholder="Buscar conteúdo"/>
       </PublicationSearch>
 
-      {/* <Publications>
-
-      </Publications> */}
+      <Publications>
+        <PublicationCard/>
+        <PublicationCard/>
+        <PublicationCard/>
+        <PublicationCard/>
+        <PublicationCard/>
+        <PublicationCard/>
+      </Publications>
     </HomeContainer>
   )
 }
