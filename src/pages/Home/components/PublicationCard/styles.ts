@@ -32,7 +32,8 @@ export const PublicationCardContainer = styled.div`
   }
 
   &:hover {
-    transform: scale(1.06)
+    transform: scale(1.06);
+    transition: 0.2s;
   }
 
 `
