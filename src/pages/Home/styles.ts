@@ -125,6 +125,8 @@ export const Publications = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
+  max-width: 54rem;
   
   gap: 2rem;
   margin: 3rem auto;
