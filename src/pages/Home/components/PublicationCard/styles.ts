@@ -31,4 +31,8 @@ export const PublicationCardContainer = styled.div`
     justify-content: space-between;
   }
 
+  &:hover {
+    transform: scale(1.06)
+  }
+
 `
