@@ -106,6 +106,7 @@ export const PublicationSearch = styled.div`
     width: 54rem;
     height: 3.25rem;
     resize: none;
+    color: ${({theme}) => theme.colors["base-title"]};
 
     padding: 1rem;
     margin-top: 0.5rem;
@@ -113,6 +114,11 @@ export const PublicationSearch = styled.div`
     
     border: 1px solid ${({theme}) => theme.colors["base-border"]};
     border-radius: 6px;
+
+    &:active,
+    &:focus {
+      border-color: ${({theme}) => theme.colors.blue};
+    }
   }
 
   textarea::placeholder {
