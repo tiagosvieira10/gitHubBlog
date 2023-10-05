@@ -1,0 +1,48 @@
+import styled from "styled-components";
+
+export const CardExplainContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+`
+export const BoxExplain = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  width: 54rem;
+
+  margin-top: -4.5rem;
+
+  background-color: ${({theme}) => theme.colors["base-profile"]};
+  border-radius: 10px;
+`
+
+export const HeaderBoxExplin = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    color: ${({theme}) => theme.colors.blue};
+    font-size: ${(props) => props.theme.fontSizes.link};
+  }
+`
+
+export const InformationPost = styled.div`
+  display: flex;
+  gap: 2rem;
+`
+
+export const PostData = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+`
