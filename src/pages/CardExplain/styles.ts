@@ -61,4 +61,20 @@ export const ContentExplain = styled.div`
 
   flex-direction: column;
   max-width: 54rem;
+
+  gap: 1.5rem;
+  padding: 2rem;
+
+  p {
+    font-size: ${({theme}) => theme.fontSizes["text-m"]};
+    color: ${({theme}) => theme.colors["base-text"]};
+
+    h4 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: ${({theme}) => theme.fontWeights.text};
+      color: ${({theme}) => theme.colors.blue};
+      text-decoration: underline;
+    }
+  }
 `
